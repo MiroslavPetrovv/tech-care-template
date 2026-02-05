@@ -3,23 +3,23 @@ import { ShieldCheck, AlertCircle, Clock, FileText } from "lucide-react";
 const warrantyPoints = [
   {
     icon: ShieldCheck,
-    title: "90-Day Repair Warranty",
-    description: "All hardware repairs come with a 90-day warranty covering parts and labor.",
+    title: "30-дневна гаранция на ремонта",
+    description: "Хардуерните ремонти се извършват с до 30 дни гаранция,покриваща единствено извършената услуга и вложените части.",
   },
   {
     icon: Clock,
-    title: "Quick Turnaround",
-    description: "Most repairs completed within 24-48 hours. Rush service available for urgent cases.",
+    title: "Срокове за ремонт",
+    description: "Срокът за изпълнение зависи от сложността на ремонта и наличността на резервни части.",
   },
   {
     icon: FileText,
-    title: "Transparent Quotes",
-    description: "Free diagnostics with detailed cost estimates before any work begins.",
+    title: "Предварителна диагностика",
+    description: "Диагностиката се извършва предварително.Ремонт се извършва само след съгласие на клиента.",
   },
   {
     icon: AlertCircle,
-    title: "No Fix, No Fee",
-    description: "If we can't solve your problem, you don't pay for the repair attempt.",
+    title: "Ограничения на отговорността",
+    description: "GlobalNet Service Solutions EOOD не носи отговорностза софтуерни проблеми и загуба на данни.",
   },
 ];
 
@@ -31,37 +31,37 @@ const Warranty = () => {
           {/* Content */}
           <div>
             <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-2 block">
-              Our Guarantee
+              Нашата гаранция
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Warranty & Conditions
+              Гаранция и условия
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              We stand behind our work with comprehensive warranties and transparent policies. 
-              Your satisfaction and trust are our top priorities.
+             Предлагаме ясно дефинирани гаранционни условия за извършените услуги и ремонти,
+              с цел сигурност и коректност към клиента.
             </p>
 
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary mt-2" />
-                <span className="text-muted-foreground">Warranty void if device has water or physical damage after repair</span>
+                <span className="text-muted-foreground">Гаранцията отпада при наличие на физически щети или следи от влага</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary mt-2" />
-                <span className="text-muted-foreground">Customer data backup is customer's responsibility</span>
+                <span className="text-muted-foreground">Клиентът носи отговорност за архивиране и съхранение на личните си данни</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary mt-2" />
-                <span className="text-muted-foreground">Original receipt required for warranty claims</span>
+                <span className="text-muted-foreground">За гаранционни претенции е необходим оригинален платежен документ</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary mt-2" />
-                <span className="text-muted-foreground">Extended warranty options available upon request</span>
+                <span className="text-muted-foreground">Разширена гаранция се предлага при предварителна уговорка</span>
               </li>
             </ul>
 
             <a href="#contact" className="btn-primary">
-              Contact for Details
+              Пълните гаранционни условия
             </a>
           </div>
 

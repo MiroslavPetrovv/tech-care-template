@@ -5,7 +5,7 @@ const Hero = () => {
   const stats = [
     { icon: Shield, label: "Сертифицирани експерти", value: "10+" },
     { icon: Clock, label: "Години опит", value: "10+" },
-    { icon: Users, label: "Доволни клиенти", value: "99+" },
+    { icon: Users, label: "Доволни клиенти", value: "999+" },
   ];
 
   return (

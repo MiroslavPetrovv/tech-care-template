@@ -10,13 +10,12 @@ const locations = [
     weekend: "Сьб. 9:30 - 4:30",
   },
   {
-    name: "Клон в Център",
-    address: "Ул. Приг 123, Кат 3",
-    city: "Люця, BG 94102",
-    phone: "+359 (2) 555-0456",
-    email: "center@globalnet.bg",
-    hours: "Пн-Пт: 8:00 - 7:00",
-    weekend: "Сьб-Нед.: 10:00 - 5:00",
+    name: "GlobalNet",
+    address: "бул Христо Ботев 76",
+    city: "Кърджали",
+    phone: "0893 39 25 09",
+    hours: "Пн-Пт: 8:30 - 17:30",
+    weekend: "",
   },
 ];
 
@@ -33,7 +32,7 @@ const Locations = () => {
             Локации и Работни часове
           </h2>
           <p className="text-lg text-muted-foreground">
-            Посетете одно от нашите удобни локации или свържете се с нас за помощ на сайтa.
+            Посетете една от нашите удобни локации или се свържете с нас за помощ.
           </p>
         </div>
 
@@ -60,15 +59,6 @@ const Locations = () => {
                     {location.phone}
                   </a>
                 </div>
-
-                {/* Email */}
-                <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-primary" />
-                  <a href={`mailto:${location.email}`} className="text-foreground hover:text-primary transition-colors">
-                    {location.email}
-                  </a>
-                </div>
-
                 {/* Hours */}
                 <div className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
