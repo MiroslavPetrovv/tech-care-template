@@ -4,14 +4,14 @@ const packages = [
   {
     name: "START",
     price: "$49",
-    period: "one-time",
-    description: "Basic computer diagnostics and cleaning",
+    period: "еднократно",
+    description: "Базична диагностика и почистване на компютър",
     features: [
-      "Full system diagnostics",
-      "Software optimization",
-      "Dust cleaning",
-      "Basic virus scan",
-      "Performance report",
+      "Пълна диагностика на системата",
+      "Оптимизация на софтуера",
+      "Почистване от прах",
+      "Основно сканиране на вирусите",
+      "Доклад за производителност",
     ],
     bonus: null,
     featured: false,
@@ -19,49 +19,49 @@ const packages = [
   {
     name: "GAMER PRO",
     price: "$149",
-    period: "one-time",
-    description: "Complete gaming PC optimization",
+    period: "еднократно",
+    description: "Пълна оптимизация на гейминг ПК",
     features: [
-      "Everything in START",
-      "Gaming performance tuning",
-      "Driver updates & optimization",
-      "Thermal paste replacement",
-      "RGB setup & configuration",
-      "Overclocking consultation",
+      "Всичко в START",
+      "Настройка на производителност на игрите",
+      "Актуализация на драйвери и оптимизация",
+      "Замяна на термоустойчива паста",
+      "Настройка и конфигурация на RGB",
+      "Консултация по разгонване",
     ],
-    bonus: "Free gaming mouse pad",
+    bonus: "Безплатна гейминг подложка за мишка",
     featured: true,
   },
   {
     name: "OFFICE CARE",
     price: "$79",
-    period: "per month",
-    description: "Monthly business IT support",
+    period: "в месец",
+    description: "Месечна бизнес IT поддръжка",
     features: [
-      "Monthly maintenance visits",
-      "Priority phone support",
-      "Network monitoring",
-      "Data backup management",
-      "Security updates",
-      "Hardware inventory",
+      "Месечни визити за поддръжка",
+      "Приоритетна телефонна поддръжка",
+      "Мониторинг на мрежата",
+      "Управление на резервно копиране на данни",
+      "Актуализации на безопасност",
+      "Инвентаризация на хардуер",
     ],
-    bonus: "First month 50% off",
+    bonus: "Първи месец 50% отстъпка",
     featured: false,
   },
   {
     name: "WEB START",
     price: "$299",
-    period: "starting at",
-    description: "Professional web presence",
+    period: "начало",
+    description: "Професионално уеб присъствие",
     features: [
-      "Custom website design",
-      "Mobile responsive",
-      "SEO optimization",
-      "Contact forms",
-      "Google Analytics setup",
-      "1 year hosting included",
+      "Персонализиран дизайн на уебсайт",
+      "Отзивчив дизайн за мобилни устройства",
+      "Оптимизация за SEO",
+      "Формуляри за контакт",
+      "Настройка на Google Analytics",
+      "1 година хостинг включена",
     ],
-    bonus: "Free domain for 1 year",
+    bonus: "Безплатен домейн за 1 година",
     featured: false,
   },
 ];
@@ -73,13 +73,13 @@ const Pricing = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-2 block">
-            Pricing Plans
+            Ценови планове
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Service Packages
+            Пакети услуги
           </h2>
           <p className="text-lg text-muted-foreground">
-            Transparent pricing with no hidden fees. Choose the package that fits your needs.
+            Прозрачно ценообразуване без скрити такси. Изберете пакета, който отговаря на вашите нужди.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ const Pricing = () => {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
                   <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold">
                     <Star className="w-3 h-3" />
-                    Popular
+                    Популярен
                   </div>
                 </div>
               )}
@@ -132,7 +132,7 @@ const Pricing = () => {
                 href="#contact"
                 className={pkg.featured ? "btn-primary w-full justify-center" : "btn-outline w-full justify-center"}
               >
-                Get Started
+                Начни
               </a>
             </div>
           ))}

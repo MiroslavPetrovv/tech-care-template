@@ -5,39 +5,68 @@ import {
   Database, 
   Shield, 
   Cpu,
+  Globe,
+  Wrench,
+  HardDriveDownload,
+  ArrowDownToLine,
+  Clock,
   ArrowRight
 } from "lucide-react";
 
 const services = [
   {
-    icon: Laptop,
-    title: "Laptop Repair",
-    description: "Professional laptop diagnostics and repair services. Screen replacement, keyboard repair, and hardware upgrades.",
-  },
-  {
     icon: Monitor,
-    title: "Desktop PC Repair",
-    description: "Complete desktop computer repair and maintenance. From hardware issues to system optimization.",
+    title: "Диагностика и профилактика на техника",
+    description: [
+      "Хардуерна и софтуерна диагностика",
+      "Профилактика на машини",
+      "Диагностика на системата ви",
+    ],
   },
   {
-    icon: Settings,
-    title: "Software Installation",
-    description: "Operating system installation, software setup, and configuration for optimal performance.",
+    icon: ArrowDownToLine,
+    title: "Инсталация и конфигурация на софтуер",
+    description: [
+      "Инсталация на Windows",
+      "Инсталация на Драйвери",
+      "Първоначална настройка",
+    ],
   },
   {
-    icon: Database,
-    title: "Data Backup & Recovery",
-    description: "Secure data backup solutions and professional data recovery services for lost files.",
+    icon: Clock,
+    title: "Поддръжка и актуализация на системи",
+    description: [
+      "Актуализации",
+      "Оптимизация",
+      "Office пакети",
+    ],
   },
   {
-    icon: Shield,
-    title: "Antivirus & Security",
-    description: "Comprehensive security solutions including virus removal, firewall setup, and malware protection.",
+    icon: Wrench,
+    title: "Ремонт и хардуерен ъпгрейд",
+    description: [
+      "Ремонт на компютри и лаптопи",
+      "Смяна / монтаж на SSD, RAM",
+      "Принтери ",
+    ],
   },
   {
-    icon: Cpu,
-    title: "Spare Parts & Upgrades",
-    description: "Quality replacement parts and hardware upgrades to extend the life of your equipment.",
+    icon: HardDriveDownload,
+    title: "Архивиране и възстановяване на данни",
+    description:  [
+      "Запазване и прехвърляне на данни",
+      "Възстановяване при проблем",
+      "Архивиране ",
+    ],
+  },
+  {
+    icon: Globe,
+    title: "Уеб услуги и онлайн решения",
+    description: [
+      "Уебсайтове",
+      "Онлайн магазини",
+      "Домейни и хостинг ",
+    ],
   },
 ];
 
@@ -48,13 +77,13 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-2 block">
-            Our Services
+            Наши услуги
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            What We Offer
+            Какво предлагаме
           </h2>
           <p className="text-lg text-muted-foreground">
-            We fix computers & business servers. Professional IT solutions tailored to your needs.
+            Поправяме компютъри и бизнес сървъри. Професионални IT решения, адаптирани към вашите нужди.
           </p>
         </div>
 
@@ -76,7 +105,15 @@ const Services = () => {
                 {service.title}
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                {service.description}
+                {Array.isArray(service.description) ? (
+                  <ul className="text-muted-foreground mb-6 leading-relaxed list-disc list-inside text-black">
+                    {service.description.map((point, index) => (
+                      <li key={index}>{point}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <span>{service.description}</span>
+                )}
               </p>
 
               {/* Learn More Link */}
@@ -84,7 +121,7 @@ const Services = () => {
                 href="#contact"
                 className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors group/link"
               >
-                Learn more
+                Научи пoвече
                 <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
               </a>
             </div>

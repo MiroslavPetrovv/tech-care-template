@@ -3,9 +3,9 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const stats = [
-    { icon: Shield, label: "Certified Experts", value: "15+" },
-    { icon: Clock, label: "Years Experience", value: "10+" },
-    { icon: Users, label: "Happy Clients", value: "2,500+" },
+    { icon: Shield, label: "Сертифицирани експерти", value: "10+" },
+    { icon: Clock, label: "Години опит", value: "10+" },
+    { icon: Users, label: "Доволни клиенти", value: "99+" },
   ];
 
   return (
@@ -39,29 +39,29 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-electric/10 border border-electric/30 mb-6 animate-fade-in">
             <span className="w-2 h-2 rounded-full bg-electric animate-pulse" />
-            <span className="text-sm font-medium text-electric">Trusted IT Solutions Partner</span>
+            <span className="text-sm font-medium text-electric">Надежден партньор за IT решения</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Professional IT Services for{" "}
-            <span className="gradient-text">Home & Business</span>
+            Професионални IT услуги за{" "}
+            <span className="gradient-text">Дома и Бизнеса</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-steel-light mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Diagnostics, maintenance, software solutions, and web services. 
-            We provide comprehensive IT support to keep your technology running smoothly.
+            Диагностика, поддръжка, софтуерни решения и уеб услуги.
+            Предоставяме всеобхватна IT поддръжка, за да може вашата технология работи гладко.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <a href="#contact" className="btn-primary group">
-              Contact Us
+              Свържи се с нас
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a href="#services" className="btn-outline border-white/30 text-white hover:bg-white hover:text-navy">
-              View Services
+              Преглед на услуги
             </a>
           </div>
 
@@ -77,13 +77,6 @@ const Hero = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
-          <div className="w-1 h-2 rounded-full bg-electric" />
         </div>
       </div>
     </section>

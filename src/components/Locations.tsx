@@ -2,22 +2,21 @@ import { MapPin, Phone, Clock, Mail } from "lucide-react";
 
 const locations = [
   {
-    name: "Main Office",
-    address: "123 Technology Drive, Suite 100",
-    city: "San Francisco, CA 94105",
-    phone: "(415) 555-0123",
-    email: "sf@techpro.com",
-    hours: "Mon-Fri: 9AM - 6PM",
-    weekend: "Sat: 10AM - 4PM",
+    name: "Офис/Магазин",
+    address: "Бул. Бупаир 27",
+    city: "Кържали",
+    phone: "089 260 2620",
+    hours: "Пн-Пт: 9:00 - 18:30",
+    weekend: "Сьб. 9:30 - 4:30",
   },
   {
-    name: "Downtown Branch",
-    address: "456 Market Street, Floor 3",
-    city: "San Francisco, CA 94102",
-    phone: "(415) 555-0456",
-    email: "downtown@techpro.com",
-    hours: "Mon-Fri: 8AM - 7PM",
-    weekend: "Sat-Sun: 10AM - 5PM",
+    name: "Клон в Център",
+    address: "Ул. Приг 123, Кат 3",
+    city: "Люця, BG 94102",
+    phone: "+359 (2) 555-0456",
+    email: "center@globalnet.bg",
+    hours: "Пн-Пт: 8:00 - 7:00",
+    weekend: "Сьб-Нед.: 10:00 - 5:00",
   },
 ];
 
@@ -28,13 +27,13 @@ const Locations = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-2 block">
-            Find Us
+            Намери ни
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Locations & Hours
+            Локации и Работни часове
           </h2>
           <p className="text-lg text-muted-foreground">
-            Visit us at one of our convenient locations or get in touch for on-site support.
+            Посетете одно от нашите удобни локации или свържете се с нас за помощ на сайтa.
           </p>
         </div>
 
@@ -87,11 +86,11 @@ const Locations = () => {
         <div className="text-center">
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-card border border-border">
             <div className="text-center sm:text-left">
-              <h3 className="text-lg font-semibold text-foreground mb-1">Need On-Site Support?</h3>
-              <p className="text-sm text-muted-foreground">We offer same-day service for business clients</p>
+              <h3 className="text-lg font-semibold text-foreground mb-1">Нуждаете се от помощ на сайтa?</h3>
+              <p className="text-sm text-muted-foreground">Свържете се с нас още днес и получете професионално решение</p>
             </div>
             <a href="tel:(415) 555-0123" className="btn-primary whitespace-nowrap">
-              Call Now
+              Свържи се 
             </a>
           </div>
         </div>

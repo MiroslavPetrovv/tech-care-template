@@ -4,19 +4,19 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const services = [
-    "Laptop Repair",
-    "Desktop PC Repair",
-    "Software Installation",
-    "Data Recovery",
-    "Antivirus Solutions",
-    "Web Development",
+    "Поправка на лос",
+    "Поправка на Desktop компютър",
+    "Установка на софтуер",
+    "Воъзпостановяване на данни",
+    "Антивирусни решения",
+    "Уеб развой",
   ];
 
   const company = [
-    { name: "About Us", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Pricing", href: "#packages" },
-    { name: "Contact", href: "#contact" },
+    { name: "За нас", href: "#about" },
+    { name: "Услуги", href: "#services" },
+    { name: "На Цен", href: "#packages" },
+    { name: "Контакти", href: "#contact" },
   ];
 
   const social = [
@@ -41,7 +41,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-steel-light mb-6 leading-relaxed">
-              Professional IT services for homes and businesses. Reliable solutions, expert support.
+              Професионални IT щуги за намя и бизнес. Надеждени решения, экспертна поддръжка.
             </p>
             <div className="flex gap-3">
               {social.map((item, index) => (
@@ -59,7 +59,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Services</h4>
+            <h4 className="text-lg font-semibold mb-6">Услуги</h4>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Company</h4>
+            <h4 className="text-lg font-semibold mb-6">Компания</h4>
             <ul className="space-y-3">
               {company.map((item, index) => (
                 <li key={index}>
@@ -87,11 +87,11 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-6">Контактувате се с нас</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-steel-light">123 Technology Drive, Suite 100<br />San Francisco, CA 94105</span>
+                <span className="text-steel-light">Ул. Технологио 123, Контор 100<br />Людя, BG 94105</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
@@ -114,14 +114,14 @@ const Footer = () => {
       <div className="border-t border-navy-light">
         <div className="container-custom py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-steel-light">
-            © {currentYear} TechPro IT Services. All rights reserved.
+            © {currentYear} GlobalNet IT Услуги. Всички права са зарежистрирани.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-steel-light hover:text-white transition-colors">
-              Privacy Policy
+              Политика на приватност
             </a>
             <a href="#" className="text-sm text-steel-light hover:text-white transition-colors">
-              Terms of Service
+              Условия на употреба
             </a>
           </div>
         </div>
