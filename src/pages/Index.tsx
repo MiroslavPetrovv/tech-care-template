@@ -4,6 +4,7 @@ import Problems from "@/components/Problems";
 import Services from "@/components/Services";
 import Pricing from "@/components/Pricing";
 import Warranty from "@/components/Warranty";
+import About from "@/components/About";
 import Locations from "@/components/Locations";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ const Index = () => {
         <Services />
         <Pricing />
         <Warranty />
+        <About />
         <Locations />
         <Contact />
       </main>
