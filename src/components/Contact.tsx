@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -20,18 +21,28 @@ const Contact = () => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !form.phone.trim() || !form.message.trim()) {
       toast({ title: "Моля, попълнете всички задължителни полета.", variant: "destructive" });
       return;
     }
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      const { error } = await supabase.from("contact_submissions").insert({
+        name: form.name.trim(),
+        email: form.email.trim() || null,
+        phone: form.phone.trim(),
+        message: form.message.trim(),
+      });
+      if (error) throw error;
       toast({ title: "Съобщението е изпратено успешно!" });
       setForm({ name: "", email: "", phone: "", message: "" });
+    } catch {
+      toast({ title: "Грешка при изпращане. Опитайте отново.", variant: "destructive" });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
