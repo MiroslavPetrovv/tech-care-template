@@ -21,7 +21,7 @@ const locations = [
 
 const Locations = () => {
   return (
-    <section id="contact" className="section-padding bg-secondary/50">
+    <section id="locations" className="section-padding bg-secondary/50">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -79,8 +79,8 @@ const Locations = () => {
               <h3 className="text-lg font-semibold text-foreground mb-1">Нуждаете се от помощ на сайтa?</h3>
               <p className="text-sm text-muted-foreground">Свържете се с нас още днес и получете професионално решение</p>
             </div>
-            <a href="tel:(415) 555-0123" className="btn-primary whitespace-nowrap">
-              Свържи се 
+            <a href="#contact" className="btn-primary whitespace-nowrap">
+              Свържи се с нас
             </a>
           </div>
         </div>

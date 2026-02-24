@@ -27,20 +27,23 @@ const Warranty = () => {
   return (
     <section id="about" className="section-padding">
       <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Section Header */}
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-2 block">
+            Нашата гаранция
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Гаранция и условия
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Предлагаме ясно дефинирани гаранционни условия за извършените услуги и ремонти,
+            с цел сигурност и коректност към клиента.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Content */}
           <div>
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-2 block">
-              Нашата гаранция
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Гаранция и условия
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-             Предлагаме ясно дефинирани гаранционни условия за извършените услуги и ремонти,
-              с цел сигурност и коректност към клиента.
-            </p>
-
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary mt-2" />
