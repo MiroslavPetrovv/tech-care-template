@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase } from "@/lib/supabase.ts";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -30,7 +30,7 @@ const Contact = () => {
     setIsSubmitting(true);
     try {
       const { error } = await supabase
-        .from("contact_submissions")
+        .from("contacts")
         .insert([
           {
             name: form.name.trim(),
