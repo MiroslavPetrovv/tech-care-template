@@ -3,7 +3,7 @@ import { Target, Zap, ShieldCheck, HandCoins, Wrench, CheckCircle } from "lucide
 const differentiators = [
   { icon: Zap, title: "Бързина", text: "Повечето ремонти приключват в рамките на 24–48 часа." },
   { icon: ShieldCheck, title: "Надеждност", text: "Гаранция за всяка извършена услуга и използвани части." },
-  { icon: HandCoins, title: "Прозрачни цени", text: "Фиксирани цени – знаете цената преди да започнем." },
+  { icon: HandCoins, title: "Точни цени", text: "Фиксирани цени – знаете цената преди да започнем." },
   { icon: Wrench, title: "Практични решения", text: "Не продаваме ненужни услуги – поправяме това, което наистина има нужда." },
 ];
 
